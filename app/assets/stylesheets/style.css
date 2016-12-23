@@ -2612,8 +2612,8 @@ html, body, .container {
 }
 
 .container {
-	display: table;
-	vertical-align: middle;
+/*	display: table;
+	vertical-align: middle; */
 }
 
 .vertical-center-row {
