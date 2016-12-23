@@ -9,6 +9,23 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
+  def create
+    @post = Post.new
+    if @post.save(post_params)
+      flash[:notice] = "Successfully created Blog"
+      redirect_to post_path(@post)
+    else
+      flash[:alert] = "Error creating new Blog"
+      render :new
+    end
+  end
+
+  def edit
+  end
+
+  def update
+
+  end 
 
   private
 
