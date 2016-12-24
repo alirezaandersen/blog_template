@@ -1,4 +1,4 @@
-class Event < Application::Base
+class Event < ActiveRecord::Base
   serialize :recurring, Hash
 
   has_many :event_exceptions
