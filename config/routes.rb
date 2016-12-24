@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   get 'calendars/schedule'
   get 'calendars/index'
 
-  resources :events
+  resources :events do
+    resources :exceptions, module: :events
+  end
 
   get 'users/new'
 
