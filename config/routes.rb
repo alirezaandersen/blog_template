@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root 'pages#index'
 
+  get 'calendars/schedule'
   get 'users/new'
 
 
