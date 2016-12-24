@@ -1,6 +1,10 @@
 class CalendarsController < ApplicationController
 
-  def schedule 
+  def index
+    # @events = Calendar.all
+  end
+
+  def show
 
   end
 

@@ -2,7 +2,12 @@ Rails.application.routes.draw do
 
   root 'pages#index'
 
+  resource :calendars
   get 'calendars/schedule'
+  get 'calendars/index'
+
+  resources :events
+
   get 'users/new'
 
 

@@ -12,4 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require simple_calendar
+ *= require recurring_select
+ *= require jquery-mobile-rs
  */
