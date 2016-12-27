@@ -12,8 +12,7 @@ before_action :set_event, only: [:show, :edit, :update, :destroy]
  # GET /events/1
  # GET /events/1.json
  def show
-   @event
-   binding.pry
+  #  binding.pry
    begin
      @time = Time.parse(params[:time])
    rescue

@@ -5,7 +5,8 @@
 
 		<p>
 			<h1 class="company-title"><strong>Studio:</strong></h1>
-			<h3><%= link_to @event.website,"#{@event.name}" %><%#= @event.name %></h3>
+			<h3><%= link_to @event.name, @event.link %></h3>
+			<h3><a href="http://<%= @event.link%>", target =_"blank"> <%=@event.name%></h3>
 		</p>
 
 		<p>
