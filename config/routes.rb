@@ -10,6 +10,8 @@ Rails.application.routes.draw do
     resources :exceptions, module: :events
   end
 
+  resource :posts
+  
   get 'users/new'
 
 
