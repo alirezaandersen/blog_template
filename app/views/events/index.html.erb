@@ -1,9 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Events</h1>
-
+<div class="categories" id="cate">
+	<div class="container">
+		<h1 class="company-title">Events</h1>
+<body class="events-calender">
 <%= month_calendar events: @calendar_events do |day, events| %>
-  <div><strong><%= day.to_s(:long) %></strong></div>
+  <div><strong><%= day.to_s(:short) %></strong></div>
   <% events.each do |event| %>
     <div>
       <%= link_to event.name, event_path(event.id, time: event.start_time) %>
@@ -11,7 +13,7 @@
   <% end %>
 <% end %>
 
-<table>
+<!-- <table>
   <thead>
     <tr>
       <th>Name</th>
@@ -19,22 +21,26 @@
       <th>Recurring</th>
       <th colspan="3"></th>
     </tr>
-  </thead>
+  </thead> -->
 
-  <tbody>
+  <!-- <tbody>
     <% @events.each do |event| %>
       <tr>
-        <td><%= event.name %></td>
-        <td><%= event.start_time %></td>
-        <td><%= event.recurring %></td>
-        <td><%= link_to 'Show', event %></td>
-        <td><%= link_to 'Edit', edit_event_path(event) %></td>
-        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%#= event.name %></td>
+        <td><%#= event.start_time %></td>
+        <td><%#= event.recurring %></td>
+        <td><%#= link_to 'Show', event %></td>
+        <td><%#= link_to 'Edit', edit_event_path(event) %></td>
+        <td><%#= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
-  </tbody>
+  </tbody> -->
 </table>
 
 <br>
 
-<%= link_to 'New Event', new_event_path %>
+<%= button_to 'New Event', new_event_path, class:"morebtn" %>
+</div>
+</body>
+</div>
+</div>

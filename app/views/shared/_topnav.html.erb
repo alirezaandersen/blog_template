@@ -1,14 +1,13 @@
 <div class="container">
 	<div class="header">
 		<div class="logo">
-			<h1 class="company-title">Yoga By Suzanne</h1>
+			<h2 class="company-title">Yoga By Suzanne</h2>
 		</div>
 		<div class="top-nav">
 			<ul class="nav">
-				<li><%= button_to "Blog", '#', class:"morebtn" %></li>
-				<li><%= button_to "Calendar", '#', class:"morebtn" %></li>
-				<li><%= button_to "Studios", '#', class:"morebtn" %></li>
-				<li><%= button_to "Contact", '#', class:"morebtn" %></li>
+				<li><%= link_to "Blog", '#', class:"morebtn" %></li>
+				<li><%= link_to "Calendar", events_path, class:"morebtn" %></li>
+				<li><%= link_to "Studios", '#', class:"morebtn" %></li>
 			</ul>
 		</div>
 		<div class="clearfix"></div>

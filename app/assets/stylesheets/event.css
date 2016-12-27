@@ -1,0 +1,28 @@
+.table-striped > tbody > tr:nth-child(even) > td, .table-striped > tbody > tr:nth-child(odd) > th {
+        background-color: rgba(218, 221, 230, 0.68);
+}
+th {
+    background-color:  rgba(218, 221, 230, 0.68);
+}
+
+.calendar-title {
+    color: #333;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 20px;
+}
+
+a href{
+  color: #0f1215;
+  text-decoration: none;
+}
+
+.company-title {
+	font-size: 36px;
+	text-shadow: 4px 4px 4px #444;
+	font-size: 3.5em;
+	font-weight: 500;
+	color: #fff;
+	margin-bottom: 8px;
+	margin-top: 0px;
+}

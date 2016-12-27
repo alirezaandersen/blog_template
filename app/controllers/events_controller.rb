@@ -1,6 +1,7 @@
 class EventsController < ApplicationController
 before_action :set_event, only: [:show, :edit, :update, :destroy]
 
+# binding.pry
  # GET /events
  # GET /events.json
  def index
@@ -11,6 +12,8 @@ before_action :set_event, only: [:show, :edit, :update, :destroy]
  # GET /events/1
  # GET /events/1.json
  def show
+   @event
+   binding.pry
    begin
      @time = Time.parse(params[:time])
    rescue
@@ -46,6 +49,7 @@ before_action :set_event, only: [:show, :edit, :update, :destroy]
  # PATCH/PUT /events/1
  # PATCH/PUT /events/1.json
  def update
+   binding.pry
    respond_to do |format|
      if @event.update(event_params)
        format.html { redirect_to @event, notice: 'Event was successfully updated.' }

@@ -1,21 +1,39 @@
-<p id="notice"><%= notice %></p>
+<div id="cate" class="categories">
+	<div class="container">
+		<p id="notice"><%=notice %>
+		</p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @event.name %>
-</p>
+		<p>
+			<h1 class="company-title"><strong>Studio:</strong></h1>
+			<h3><%= link_to @event.website,"#{@event.name}" %><%#= @event.name %></h3>
+		</p>
 
-<p>
-  <strong>Time:</strong>
-  <%= @time %>
-</p>
+		<p>
+			<h1 class="company-title"><strong>Time:</strong></h1>
+			<h3><%= @time %></h3>
+		</p>
 
-<p>
-  <strong>Recurring:</strong>
-  <%= @event.recurring %>
-</p>
+		<p>
+			<h1 class="company-title"><strong>Recurring:</strong></h1>
+			<h3><%= @event.recurring %></h3>
+		</p>
+		<div class="top-nav">
+		<ul class="nav">
+			<li>
+				<%=link_to "Delete All Events", event_path(@event), method: :delete, class: "morebtn" %>
+			</li>
+			<li>
+				<%=link_to "Delete Just This Event", event_exceptions_path(@event, event_exception: {time: @time}), method: :post, class: "morebtn" %>
+			</li>
+			<li>
+				<%=link_to 'Edit', edit_event_path(@event), class: "morebtn" %>
+			</li>
+			<li>
+				<%=link_to 'Calendar', events_path, class: "morebtn" %>
+			</li>
+		</ul>
 
-<%= link_to "Delete All Events", event_path(@event), method: :delete %>
-<%= link_to "Delete Just This Event", event_exceptions_path(@event, event_exception: {time: @time}), method: :post %>
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+		<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
