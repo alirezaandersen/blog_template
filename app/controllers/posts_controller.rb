@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :find_post, only[:edit, :update, :show, :delete]
+  # before_action :find_post, only:[:edit, :update, :show, :delete]
 
   def index
     @posts = Post.all
@@ -10,8 +10,9 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new
-    if @post.save(post_params)
+    # binding.pry
+    @post = Post.new(post_params)
+    if @post.save
       flash[:notice] = "Successfully created Blog"
       redirect_to post_path(@post)
     else
@@ -25,7 +26,11 @@ class PostsController < ApplicationController
 
   def update
 
-  end 
+  end
+
+  def show
+    @post = Post.find(params[:id])
+  end
 
   private
 

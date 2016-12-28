@@ -1,0 +1,37 @@
+<!-- <div class="main"> -->
+<div class="product">
+	 <div class="container">
+		 <div class="ctnt-bar cntnt">
+			 <div class="content-bar">
+				 <div class="single-page row">
+			      <div class="product-head">
+						  <%= link_to "All Blogs", posts_path %> <span>::</span>
+              <%= @post.title %>
+			      </div>
+
+            <div class="details-left-slider col-lg-2">
+              <div class="grid images_3_of_2">
+
+                <a href="/"><%= image_tag "yoga_burned.png", class:"image-icon" %></a>
+              </div>
+            </div>
+
+            <div class="details-left-info col-lg-10">
+               <h3><%= @post.title %></h3>
+               <h4></h4>
+                <div class="btn_form">
+                  <%= button_to "Post to facebook", '#', class:"btn_form" %>
+                </div>
+               <div class="bike-type">
+                 <p>Title:  ::<%= link_to @post.title, "/#{@post.title}" %></p>
+               </div>
+               <h5>Description  ::</h5>
+               <p class="desc"><%= @post.body %></p>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

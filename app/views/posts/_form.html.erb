@@ -1,10 +1,15 @@
 <div class="container">
 
-  <%= form_for(posts) do |s| %>
-  <% s.label :title %>
-  <% s.text_field :title %>
+  <%= form_for(post) do |s| %>
+  <div class="field">
+  <%= s.label :title %>
+  <%= s.text_area :title %>
+  </div>
 
+  <div class="field">
   <%= s.label :body %>
-  <%= s.text_field :body %>
+  <%= s.text_area :body %>
+  </div>
+    <%= s.submit class: "btn btn-primary" %>
   <% end %>
 </div>

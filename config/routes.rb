@@ -2,16 +2,17 @@ Rails.application.routes.draw do
 
   root 'pages#index'
 
-  resource :calendars
-  get 'calendars/schedule'
-  get 'calendars/index'
+  # resources :calendars
+  # get 'calendars/schedule'
+  # get 'calendars/index'
 
   resources :events do
     resources :exceptions, module: :events
   end
 
-  resource :posts
-  
+  resources :posts
+  # get 'posts/index'
+
   get 'users/new'
 
 
