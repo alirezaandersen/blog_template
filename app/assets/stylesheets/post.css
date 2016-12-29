@@ -1,9 +1,21 @@
 .right {
-    position:absolute;
-    right:0; top:150px; bottom: 0;
-    width: 178px;
+  position: relative;
+  display: inline-block;
+  /*float: right;*/
+  width: 33.3%;
+  background: yellow;
+  padding: 10px;
+    /*position:absolute;*/
+    /*right:0; top:150px; bottom: 0;*/
+    /*width: 178px;*/
 }
 .main {
-    position: absolute;
-    left:178px; top:150px; right:0; bottom:0;
+  position: relative;
+  display: inline-block
+  padding: 20px;
+  float: left;
+  width: 66.6%;
+  background: purple;
+    /*position: absolute;
+    left:178px; top:150px; right:0; bottom:0;*/
 }
