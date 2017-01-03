@@ -11,11 +11,14 @@
 }
 .main {
   position: relative;
-  display: inline-block
+  display: inline-block;
   padding: 20px;
   float: left;
   width: 66.6%;
   background: purple;
     /*position: absolute;
     left:178px; top:150px; right:0; bottom:0;*/
+}
+.blog-links{
+  margin-left: 50px;
 }

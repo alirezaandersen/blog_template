@@ -1,10 +1,19 @@
 <div class="container">
 
   <div class="right">
-      right with all of the links
+    <div class="prduct-head">
+      <h4 class="company-title">Recent Blogs</h4><br>
+      <div class="blog-links">
+      <% @posts.limit(50).order('created_at DESC').each do |blog| %>
+      <%= link_to "#{blog.title}", post_path(blog.id) %><br>
+      <% end %>
+    </div>
+    </div>
   </div>
   <div class="main">
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <h4 class="company-title"><%= @posts.last.title %></h4>
+    <p class="desc"><%= @posts.last.body %></p>
+    <p>Lorem Ipsrvmum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     <thead>
       MAIN - this is where the blog will be.
     </thead>
