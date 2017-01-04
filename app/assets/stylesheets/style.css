@@ -555,8 +555,8 @@ select {
 /*--bycycle--*/
 
 .banner-sec {
-	background: url(background1.png) no-repeat;
-	background-size: cover;
+	background: url(heart_cloud.png) no-repeat;
+	background-size: 100% 100%;
 	min-height: 200px;
 }
 
