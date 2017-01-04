@@ -1,0 +1,25 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/alirezaandersen/.nvm/versions/node/v4.4.7/bin/node',
+1 verbose cli   '/Users/alirezaandersen/.nvm/versions/node/v4.4.7/bin/npm',
+1 verbose cli   'config',
+1 verbose cli   'get',
+1 verbose cli   'prefix' ]
+2 info using npm@2.15.8
+3 info using node@v4.4.7
+4 verbose config Skipping project config: /Users/alirezaandersen/.npmrc. (matches userconfig)
+5 verbose exit [ 0, true ]
+6 verbose stack Error: write EPIPE
+6 verbose stack     at exports._errnoException (util.js:873:11)
+6 verbose stack     at WriteWrap.afterWrite (net.js:785:14)
+7 verbose cwd /Users/alirezaandersen/AndersenDevelopment/blog_template/blog/app/assets/javascripts
+8 error Darwin 15.6.0
+9 error argv "/Users/alirezaandersen/.nvm/versions/node/v4.4.7/bin/node" "/Users/alirezaandersen/.nvm/versions/node/v4.4.7/bin/npm" "config" "get" "prefix"
+10 error node v4.4.7
+11 error npm  v2.15.8
+12 error code EPIPE
+13 error errno EPIPE
+14 error syscall write
+15 error write EPIPE
+16 error If you need help, you may report this error at:
+16 error     <https://github.com/npm/npm/issues>
+17 verbose exit [ 1, true ]

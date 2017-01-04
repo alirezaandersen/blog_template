@@ -227,7 +227,7 @@ input.morebtn {
 /*--categories--*/
 
 .categories {
-	background: url(cate.jpg) no-repeat;
+	/*background: url(cate.jpg) no-repeat;*/
 	background-size: cover;
 	min-height: 600px;
 	text-align: center;
@@ -429,7 +429,7 @@ select {
 /*--contact--*/
 
 .contact {
-	background: url(contact.jpg) no-repeat 0px 0px;
+	/*background: url(contact.jpg) no-repeat 0px 0px;*/
 	min-height: 560px;
 	background-size: cover;
 	text-align: center;
@@ -507,15 +507,29 @@ select {
 	color: #fcff19;
 }
 
+
+#pagewrap {
+	min-height: 100%;
+	position: relative;
+}
+
+/*
 #pagewrap {
 	min-height: 110%;
 	position: relative;
 }
-
+*/
 #main_body {
+	/* padding: 0px; */
+padding-bottom: 100px;
+background: url(heart_cloud.png);
+background-size: cover;
+height: 100%;
+}
+/*#main_body {
 	padding: 0px;
 	padding-bottom: 100px;
-}
+}*/
 
 
 /*--footer--*/
